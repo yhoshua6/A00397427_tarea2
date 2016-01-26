@@ -1,0 +1,277 @@
+\hypertarget{complexMath_8h}{}\section{complex\+Math.\+h File Reference}
+\label{complexMath_8h}\index{complex\+Math.\+h@{complex\+Math.\+h}}
+
+
+Declaracion de las funciones para complex\+Math.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structComplexNumber}{Complex\+Number}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{complexMath_8h_a98beabfca824a138f426b8d1e4310981}{get\+C\+Numbers\+Op} (struct \hyperlink{structComplexNumber}{Complex\+Number} $\ast$n1, struct \hyperlink{structComplexNumber}{Complex\+Number} $\ast$n2, char $\ast$operator, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Realiza la operación dada. \end{DoxyCompactList}\item 
+void \hyperlink{complexMath_8h_af48e0a2007457badddf9df11321e7cce}{set\+C\+Number} (struct \hyperlink{structComplexNumber}{Complex\+Number} $\ast$ptr, float real, float img)
+\begin{DoxyCompactList}\small\item\em Asigna un numero complejo. \end{DoxyCompactList}\item 
+void \hyperlink{complexMath_8h_a76b27b28733b6a79155e5b94f4c68a01}{print\+C\+Number} (struct \hyperlink{structComplexNumber}{Complex\+Number} $\ast$ptr)
+\begin{DoxyCompactList}\small\item\em Imprime un numero complejo. \end{DoxyCompactList}\item 
+void \hyperlink{complexMath_8h_a869877592d7dc4d3bdf3a3031911f19c}{print\+Operation} (struct \hyperlink{structComplexNumber}{Complex\+Number} $\ast$result, struct \hyperlink{structComplexNumber}{Complex\+Number} $\ast$number1, struct \hyperlink{structComplexNumber}{Complex\+Number} $\ast$number2, char operator)
+\begin{DoxyCompactList}\small\item\em Imprime la operacion realizada. \end{DoxyCompactList}\item 
+int \hyperlink{complexMath_8h_a6c212af09cc97e74694d369f837e8624}{do\+C\+Numbers\+Op} (struct \hyperlink{structComplexNumber}{Complex\+Number} $\ast$result, struct \hyperlink{structComplexNumber}{Complex\+Number} $\ast$number1, struct \hyperlink{structComplexNumber}{Complex\+Number} $\ast$number2, char operator)
+\begin{DoxyCompactList}\small\item\em Realiza la operación con dos numeros complejos dados. \end{DoxyCompactList}\item 
+void \hyperlink{complexMath_8h_a95364b5a631f393f1014d9a94b9dfe89}{add\+C\+Numbers} (struct \hyperlink{structComplexNumber}{Complex\+Number} $\ast$result, struct \hyperlink{structComplexNumber}{Complex\+Number} $\ast$number1, struct \hyperlink{structComplexNumber}{Complex\+Number} $\ast$number2)
+\begin{DoxyCompactList}\small\item\em Suma dos números complejos. \end{DoxyCompactList}\item 
+void \hyperlink{complexMath_8h_a2c089900ef30f45b35e8cd430114810f}{sub\+C\+Numbers} (struct \hyperlink{structComplexNumber}{Complex\+Number} $\ast$result, struct \hyperlink{structComplexNumber}{Complex\+Number} $\ast$number1, struct \hyperlink{structComplexNumber}{Complex\+Number} $\ast$number2)
+\begin{DoxyCompactList}\small\item\em Resta dos números complejos. \end{DoxyCompactList}\item 
+void \hyperlink{complexMath_8h_a32cac920e95997b04676c7128e60a03d}{mul\+C\+Numbers} (struct \hyperlink{structComplexNumber}{Complex\+Number} $\ast$result, struct \hyperlink{structComplexNumber}{Complex\+Number} $\ast$number1, struct \hyperlink{structComplexNumber}{Complex\+Number} $\ast$number2)
+\begin{DoxyCompactList}\small\item\em Multiplica dos números complejos. \end{DoxyCompactList}\item 
+void \hyperlink{complexMath_8h_ac6e73a4512ce472db90c877350cc54a2}{div\+C\+Numbers} (struct \hyperlink{structComplexNumber}{Complex\+Number} $\ast$result, struct \hyperlink{structComplexNumber}{Complex\+Number} $\ast$number1, struct \hyperlink{structComplexNumber}{Complex\+Number} $\ast$number2)
+\begin{DoxyCompactList}\small\item\em Divide dos números complejos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Declaracion de las funciones para complex\+Math. 
+
+Contiene la declaración de las variables y funciones necesarias para el correcto funcionameinto de complex\+Math
+
+\begin{DoxyAuthor}{Author}
+Josué Hernández Mateo 
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000002}{Bug}]No known bugs. \end{DoxyRefDesc}
+
+
+\subsection{Function Documentation}
+\index{complex\+Math.\+h@{complex\+Math.\+h}!add\+C\+Numbers@{add\+C\+Numbers}}
+\index{add\+C\+Numbers@{add\+C\+Numbers}!complex\+Math.\+h@{complex\+Math.\+h}}
+\subsubsection[{\texorpdfstring{add\+C\+Numbers(struct Complex\+Number $\ast$result, struct Complex\+Number $\ast$number1, struct Complex\+Number $\ast$number2)}{addCNumbers(struct ComplexNumber *result, struct ComplexNumber *number1, struct ComplexNumber *number2)}}]{\setlength{\rightskip}{0pt plus 5cm}void add\+C\+Numbers (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Complex\+Number} $\ast$}]{result, }
+\item[{struct {\bf Complex\+Number} $\ast$}]{number1, }
+\item[{struct {\bf Complex\+Number} $\ast$}]{number2}
+\end{DoxyParamCaption}
+)}\hypertarget{complexMath_8h_a95364b5a631f393f1014d9a94b9dfe89}{}\label{complexMath_8h_a95364b5a631f393f1014d9a94b9dfe89}
+
+
+Suma dos números complejos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$result} & Apuntador a una estructura de número complejo para el resultado \\
+\hline
+{\em $\ast$number1} & Aputnador al primer número complejo \\
+\hline
+{\em $\ast$number2} & Aputnador al segundo número complejo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{complex\+Math.\+h@{complex\+Math.\+h}!div\+C\+Numbers@{div\+C\+Numbers}}
+\index{div\+C\+Numbers@{div\+C\+Numbers}!complex\+Math.\+h@{complex\+Math.\+h}}
+\subsubsection[{\texorpdfstring{div\+C\+Numbers(struct Complex\+Number $\ast$result, struct Complex\+Number $\ast$number1, struct Complex\+Number $\ast$number2)}{divCNumbers(struct ComplexNumber *result, struct ComplexNumber *number1, struct ComplexNumber *number2)}}]{\setlength{\rightskip}{0pt plus 5cm}void div\+C\+Numbers (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Complex\+Number} $\ast$}]{result, }
+\item[{struct {\bf Complex\+Number} $\ast$}]{number1, }
+\item[{struct {\bf Complex\+Number} $\ast$}]{number2}
+\end{DoxyParamCaption}
+)}\hypertarget{complexMath_8h_ac6e73a4512ce472db90c877350cc54a2}{}\label{complexMath_8h_ac6e73a4512ce472db90c877350cc54a2}
+
+
+Divide dos números complejos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$result} & Apuntador a una estructura de número complejo para el resultado \\
+\hline
+{\em $\ast$number1} & Aputnador al primer número complejo \\
+\hline
+{\em $\ast$number2} & Aputnador al segundo número complejo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{complex\+Math.\+h@{complex\+Math.\+h}!do\+C\+Numbers\+Op@{do\+C\+Numbers\+Op}}
+\index{do\+C\+Numbers\+Op@{do\+C\+Numbers\+Op}!complex\+Math.\+h@{complex\+Math.\+h}}
+\subsubsection[{\texorpdfstring{do\+C\+Numbers\+Op(struct Complex\+Number $\ast$result, struct Complex\+Number $\ast$number1, struct Complex\+Number $\ast$number2, char operator)}{doCNumbersOp(struct ComplexNumber *result, struct ComplexNumber *number1, struct ComplexNumber *number2, char operator)}}]{\setlength{\rightskip}{0pt plus 5cm}int do\+C\+Numbers\+Op (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Complex\+Number} $\ast$}]{result, }
+\item[{struct {\bf Complex\+Number} $\ast$}]{number1, }
+\item[{struct {\bf Complex\+Number} $\ast$}]{number2, }
+\item[{char}]{operator}
+\end{DoxyParamCaption}
+)}\hypertarget{complexMath_8h_a6c212af09cc97e74694d369f837e8624}{}\label{complexMath_8h_a6c212af09cc97e74694d369f837e8624}
+
+
+Realiza la operación con dos numeros complejos dados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$result} & Apuntador al resultado de la operación \\
+\hline
+{\em $\ast$number1} & Apuntador a la primera estructura de numero complejo \\
+\hline
+{\em $\ast$number2} & Apuntador a la segunda estructura de numero complejo \\
+\hline
+{\em $\ast$operator} & Operador a realizar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\index{complex\+Math.\+h@{complex\+Math.\+h}!get\+C\+Numbers\+Op@{get\+C\+Numbers\+Op}}
+\index{get\+C\+Numbers\+Op@{get\+C\+Numbers\+Op}!complex\+Math.\+h@{complex\+Math.\+h}}
+\subsubsection[{\texorpdfstring{get\+C\+Numbers\+Op(struct Complex\+Number $\ast$n1, struct Complex\+Number $\ast$n2, char $\ast$operator, char $\ast$argv[])}{getCNumbersOp(struct ComplexNumber *n1, struct ComplexNumber *n2, char *operator, char *argv[])}}]{\setlength{\rightskip}{0pt plus 5cm}void get\+C\+Numbers\+Op (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Complex\+Number} $\ast$}]{n1, }
+\item[{struct {\bf Complex\+Number} $\ast$}]{n2, }
+\item[{char $\ast$}]{operator, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{complexMath_8h_a98beabfca824a138f426b8d1e4310981}{}\label{complexMath_8h_a98beabfca824a138f426b8d1e4310981}
+
+
+Realiza la operación dada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$n1} & Primer argumento que es un apuntador a la estructura de un numero complejo \\
+\hline
+{\em $\ast$n2} & Segundo argumento que es un apuntador a la estructura de un numero complejo \\
+\hline
+{\em $\ast$operator} & La operación a realzar en tipo char \\
+\hline
+{\em $\ast$argv\mbox{[}$\,$\mbox{]}} & argumentos enviados en la consola \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{complex\+Math.\+h@{complex\+Math.\+h}!mul\+C\+Numbers@{mul\+C\+Numbers}}
+\index{mul\+C\+Numbers@{mul\+C\+Numbers}!complex\+Math.\+h@{complex\+Math.\+h}}
+\subsubsection[{\texorpdfstring{mul\+C\+Numbers(struct Complex\+Number $\ast$result, struct Complex\+Number $\ast$number1, struct Complex\+Number $\ast$number2)}{mulCNumbers(struct ComplexNumber *result, struct ComplexNumber *number1, struct ComplexNumber *number2)}}]{\setlength{\rightskip}{0pt plus 5cm}void mul\+C\+Numbers (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Complex\+Number} $\ast$}]{result, }
+\item[{struct {\bf Complex\+Number} $\ast$}]{number1, }
+\item[{struct {\bf Complex\+Number} $\ast$}]{number2}
+\end{DoxyParamCaption}
+)}\hypertarget{complexMath_8h_a32cac920e95997b04676c7128e60a03d}{}\label{complexMath_8h_a32cac920e95997b04676c7128e60a03d}
+
+
+Multiplica dos números complejos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$result} & Apuntador a una estructura de número complejo para el resultado \\
+\hline
+{\em $\ast$number1} & Aputnador al primer número complejo \\
+\hline
+{\em $\ast$number2} & Aputnador al segundo número complejo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{complex\+Math.\+h@{complex\+Math.\+h}!print\+C\+Number@{print\+C\+Number}}
+\index{print\+C\+Number@{print\+C\+Number}!complex\+Math.\+h@{complex\+Math.\+h}}
+\subsubsection[{\texorpdfstring{print\+C\+Number(struct Complex\+Number $\ast$ptr)}{printCNumber(struct ComplexNumber *ptr)}}]{\setlength{\rightskip}{0pt plus 5cm}void print\+C\+Number (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Complex\+Number} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}\hypertarget{complexMath_8h_a76b27b28733b6a79155e5b94f4c68a01}{}\label{complexMath_8h_a76b27b28733b6a79155e5b94f4c68a01}
+
+
+Imprime un numero complejo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$ptr} & Apuntador a la estructura del numero complejo a imprimir\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{complex\+Math.\+h@{complex\+Math.\+h}!print\+Operation@{print\+Operation}}
+\index{print\+Operation@{print\+Operation}!complex\+Math.\+h@{complex\+Math.\+h}}
+\subsubsection[{\texorpdfstring{print\+Operation(struct Complex\+Number $\ast$result, struct Complex\+Number $\ast$number1, struct Complex\+Number $\ast$number2, char operator)}{printOperation(struct ComplexNumber *result, struct ComplexNumber *number1, struct ComplexNumber *number2, char operator)}}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Operation (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Complex\+Number} $\ast$}]{result, }
+\item[{struct {\bf Complex\+Number} $\ast$}]{number1, }
+\item[{struct {\bf Complex\+Number} $\ast$}]{number2, }
+\item[{char}]{operator}
+\end{DoxyParamCaption}
+)}\hypertarget{complexMath_8h_a869877592d7dc4d3bdf3a3031911f19c}{}\label{complexMath_8h_a869877592d7dc4d3bdf3a3031911f19c}
+
+
+Imprime la operacion realizada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$result} & Aputadora a la estructura de un numero complejo que contiene el resultado \\
+\hline
+{\em $\ast$number1} & Apuntador al primer numero comlejo \\
+\hline
+{\em $\ast$number2} & Apuntador al segundo numero complejo \\
+\hline
+{\em operator} & Signo de la operacion \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{complex\+Math.\+h@{complex\+Math.\+h}!set\+C\+Number@{set\+C\+Number}}
+\index{set\+C\+Number@{set\+C\+Number}!complex\+Math.\+h@{complex\+Math.\+h}}
+\subsubsection[{\texorpdfstring{set\+C\+Number(struct Complex\+Number $\ast$ptr, float real, float img)}{setCNumber(struct ComplexNumber *ptr, float real, float img)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+C\+Number (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Complex\+Number} $\ast$}]{ptr, }
+\item[{float}]{real, }
+\item[{float}]{img}
+\end{DoxyParamCaption}
+)}\hypertarget{complexMath_8h_af48e0a2007457badddf9df11321e7cce}{}\label{complexMath_8h_af48e0a2007457badddf9df11321e7cce}
+
+
+Asigna un numero complejo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$ptr} & Apuntador a un numero complejo \\
+\hline
+{\em real} & Parte real \\
+\hline
+{\em img} & Parte imaginaria \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{complex\+Math.\+h@{complex\+Math.\+h}!sub\+C\+Numbers@{sub\+C\+Numbers}}
+\index{sub\+C\+Numbers@{sub\+C\+Numbers}!complex\+Math.\+h@{complex\+Math.\+h}}
+\subsubsection[{\texorpdfstring{sub\+C\+Numbers(struct Complex\+Number $\ast$result, struct Complex\+Number $\ast$number1, struct Complex\+Number $\ast$number2)}{subCNumbers(struct ComplexNumber *result, struct ComplexNumber *number1, struct ComplexNumber *number2)}}]{\setlength{\rightskip}{0pt plus 5cm}void sub\+C\+Numbers (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Complex\+Number} $\ast$}]{result, }
+\item[{struct {\bf Complex\+Number} $\ast$}]{number1, }
+\item[{struct {\bf Complex\+Number} $\ast$}]{number2}
+\end{DoxyParamCaption}
+)}\hypertarget{complexMath_8h_a2c089900ef30f45b35e8cd430114810f}{}\label{complexMath_8h_a2c089900ef30f45b35e8cd430114810f}
+
+
+Resta dos números complejos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$result} & Apuntador a una estructura de número complejo para el resultado \\
+\hline
+{\em $\ast$number1} & Aputnador al primer número complejo \\
+\hline
+{\em $\ast$number2} & Aputnador al segundo número complejo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
